@@ -1,0 +1,226 @@
+/* Resetando margens e overflow para garantir que o fundo cubra toda a tela */
+body {
+    margin: 0;
+    overflow: hidden; /* Impede rolagem */
+    background: url('fotos/fundo2.gif'); /* Imagem de fundo */
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Imagem fixa no fundo da tela */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo para o container principal (onde a rádio ou conteúdo ficará) */
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Faz o container ocupar toda a altura da tela */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5); /* Sombra suave */
+    border: 2px solid rgba(0, 255, 255, 0.3); /* Borda suave */
+}
+
+/* Estilo para a imagem de capa (foto de perfil ou logo) */
+.cover-image {
+    width: 480px; /* Largura da imagem */
+    height:420px; /* Altura da imagem */
+    object-fit: cover; /* Para garantir que a imagem seja cortada corretamente sem distorção */
+    border-radius: 10%; /* Faz a imagem ficar redonda */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5); /* Sombras para dar um efeito de profundidade */
+    margin-bottom: 18px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo para o nome da música */
+.song-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Contêiner para os controles (como botões) */
+.controls {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Gradiente de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Muda o cursor para pointer (mãozinha) */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Efeito de hover (quando o usuário passa o mouse sobre o botão) */
+button:hover {
+    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Cor de fundo mais clara */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Efeito de sombra ao passar o mouse */
+}
+
+/* Efeito de clique (quando o botão é pressionado) */
+button:active {
+    transform: scale(0.95); /* Botão encolhe ligeiramente */
+}
+
+/* Estilo para o controle de volume */
+.volume-control {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#volume {
+    color: rgb(11, 65, 227);
+    width: 200px;  /* Define o tamanho da barra de volume */
+    height: 10px;  /* Altura da linha da barra de volume */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Cor de fundo da barra */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição suave ao alterar */
+}
+
+/* Efeito de hover no controle de volume (quando o usuário passa o mouse sobre o controle) */
+#volume:hover {
+    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Cor de fundo mais clara */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Sombra ao passar o mouse */
+}
+
+/* Estilo quando o controle de volume é clicado ou ajustado */
+#volume:active {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho quando pressionado */
+}
+
+/* Efeito visual para o botão de volume, ajustando a aparência de "range" */
+input[type="range"] {
+    -webkit-appearance: none;  /* Remove o estilo padrão do controle no Chrome/Safari */
+    appearance: none;
+    background: transparent;  /* Remove o fundo padrão */
+    height: 10px;  /* Define a altura da barra de volume */
+    border-radius: 5px;  /* Arredonda as bordas da barra */
+}
+
+/* Estilizando o "thumb" (a parte deslizante do controle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;  /* Remove a aparência padrão do "thumb" */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00FFFF;  /* Cor do botão de controle */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombras para dar um efeito de profundidade */
+    transition: all 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito visual para o "thumb" quando o usuário passa o mouse sobre ele */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #1f4037;  /* Muda a cor do botão ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Estilizando o "thumb" do controle de volume para Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00FFFF;  /* Cor do botão de controle */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombras */
+    transition: all 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito visual para o "thumb" quando o usuário passa o mouse sobre ele no Firefox */
+input[type="range"]::-moz-range-thumb:hover {
+    background: #1f4037;  /* Cor mais escura ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Sombra mais forte */
+}
+/* Estilo para o nome do controle de volume */
+.volume-label {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destacar */
+    color: #00FFFF; /* Cor da fonte (azul claro) */
+    text-shadow: 0px 0px 10px rgba(255, 89, 0, 0.936); /* Efeito de sombra para destacar o texto */
+    margin-bottom: 10px; /* Espaço abaixo do texto */
+}
+
+/* Estilo para o controle de volume */
+.volume-control {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#volume {
+    width: 200px;  /* Define o tamanho da barra de volume */
+    height: 10px;  /* Altura da linha da barra de volume */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Cor de fundo da barra */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição suave ao alterar */
+}
+
+/* Efeito de hover no controle de volume (quando o usuário passa o mouse sobre o controle) */
+#volume:hover {
+    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Cor de fundo mais clara */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Sombra ao passar o mouse */
+}
+
+/* Estilo quando o controle de volume é clicado ou ajustado */
+#volume:active {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho quando pressionado */
+}
+
+/* Estilizando o "thumb" (a parte deslizante do controle) */
+input[type="range"] {
+    -webkit-appearance: none;  /* Remove o estilo padrão do controle no Chrome/Safari */
+    appearance: none;
+    background: transparent;  /* Remove o fundo padrão */
+    height: 10px;  /* Define a altura da barra de volume */
+    border-radius: 5px;  /* Arredonda as bordas da barra */
+}
+
+/* Estilizando o "thumb" (o botão deslizante) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;  /* Remove a aparência padrão do "thumb" */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4c00ff;  /* Cor do botão de controle */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombras para dar um efeito de profundidade */
+    transition: all 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito de hover no "thumb" (quando o usuário passa o mouse sobre o controle) */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #1f4037;  /* Cor do botão mais escura ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Sombra mais forte */
+}
+
+/* Estilizando o "thumb" para Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00FFFF;  /* Cor do botão de controle */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombras */
+    transition: all 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito de hover no "thumb" para Firefox */
+input[type="range"]::-moz-range-thumb:hover {
+    background: #1f4037;  /* Cor mais escura no hover */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Sombra mais forte */
+}

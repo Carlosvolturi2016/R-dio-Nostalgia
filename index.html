@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Rádio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Aponte para o arquivo CSS -->
+</head>
+<body>
+    <div class="panel">
+        <!-- Imagem da capa da música -->
+        <img src="fotos/start.4jpg" alt="Capa da Música" class="cover-image" id="coverImage">
+
+        <!-- Nome da música abaixo da imagem -->
+        <div id="songTitle" class="song-title">Música 1</div>
+
+        <!-- Contêiner para os botões -->
+        <div class="controls">
+            <button id="prevButton">Anterior</button>
+            <button id="playButton">Play</button>
+            <button id="nextButton">Próxima</button>
+        </div>
+
+        <!-- Controle de volume -->
+        <div class="volume-control">
+            <label for="volume"></label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+       
+        </div>
+
+        <!-- Elemento de áudio para controlar as músicas -->
+        <audio id="audioPlayer" preload="auto">
+            <source id="audioSource" src="musicas/Drake Michael Jackson - Don’t Matter To Me.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento <code>audio</code>.
+        </audio>
+    </div>
+
+    <script src="script.js"></script> <!-- Aponte para o arquivo JavaScript -->
+</body>
+</html>

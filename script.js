@@ -49,23 +49,7 @@ const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');
 const volumeControl = document.getElementById('volume');
 
-// Função para trocar o background da rádio a cada 3 músicas
-function changeBackground() {
-    // Defina um array com várias imagens de fundo
-    const backgrounds = [
-        'Papel de parede/grafico.gif)',
-        'Papel de parede/barra.gif)',
-        'Papel de parede/ondas.gif)',
-        'Papel de parede/2BKR.gif)',
-        'fotos/fundo1.jpeg)'
-    ];
 
-    // Escolher um background aleatório
-    const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-
-    // Aplicar o background no body ou no contêiner da rádio
-    document.body.style.backgroundImage = randomBackground;
-}
 
 // Função para atualizar a música atual
 function updateSong() {

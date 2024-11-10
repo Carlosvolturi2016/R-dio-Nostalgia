@@ -2,7 +2,7 @@
 body {
     margin: 0;
     overflow: hidden; /* Impede rolagem */
-    background: url('fotos/fundo2.gif'); /* Imagem de fundo */
+    background: url('fotos/ondas.gif'); /* Imagem de fundo */
     background-size: cover; /* A imagem cobrirá toda a tela */
     background-position: center center; /* Centraliza a imagem */
     background-attachment: fixed; /* Imagem fixa no fundo da tela */
@@ -72,7 +72,7 @@ button:active {
 
 /* Estilo para o controle de volume */
 .volume-control {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;

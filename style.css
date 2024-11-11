@@ -2,7 +2,7 @@
 body {
     margin: 0;
     overflow: hidden; /* Impede rolagem */
-    background: url('fotos/ondas.gif'); /* Imagem de fundo */
+    background: url('fotos/barra.gif'); /* Imagem de fundo */
     background-size: cover; /* A imagem cobrirá toda a tela */
     background-position: center center; /* Centraliza a imagem */
     background-attachment: fixed; /* Imagem fixa no fundo da tela */
@@ -37,7 +37,7 @@ body {
 .song-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fff;
+    color: #ead40f;
     margin-bottom: 20px;
 }
 
@@ -53,7 +53,7 @@ button {
     border: none; /* Sem borda */
     border-radius: 10px; /* Bordas arredondadas */
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Gradiente de fundo */
-    color: #ffffff; /* Cor do texto */
+    color: #f9e82a; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
     cursor: pointer; /* Muda o cursor para pointer (mãozinha) */
     transition: all 0.3s ease; /* Transição suave para efeitos */
@@ -61,8 +61,8 @@ button {
 
 /* Efeito de hover (quando o usuário passa o mouse sobre o botão) */
 button:hover {
-    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Cor de fundo mais clara */
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Efeito de sombra ao passar o mouse */
+    background: linear-gradient(135deg, #2bb0bf, #051cec); /* Cor de fundo mais clara */
+    box-shadow: 0px 0px 20px rgba(71, 169, 255, 0.995); /* Efeito de sombra ao passar o mouse */
 }
 
 /* Efeito de clique (quando o botão é pressionado) */
@@ -90,8 +90,8 @@ button:active {
 
 /* Efeito de hover no controle de volume (quando o usuário passa o mouse sobre o controle) */
 #volume:hover {
-    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Cor de fundo mais clara */
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Sombra ao passar o mouse */
+    background: linear-gradient(135deg, #300fc3, #a599f2); /* Cor de fundo mais clara */
+    box-shadow: 0px 0px 15px rgba(10, 30, 205, 0.8); /* Sombra ao passar o mouse */
 }
 
 /* Estilo quando o controle de volume é clicado ou ajustado */
@@ -140,8 +140,8 @@ input[type="range"]::-moz-range-thumb {
 
 /* Efeito visual para o "thumb" quando o usuário passa o mouse sobre ele no Firefox */
 input[type="range"]::-moz-range-thumb:hover {
-    background: #1f4037;  /* Cor mais escura ao passar o mouse */
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8); /* Sombra mais forte */
+    background: #e8f805;  /* Cor mais escura ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(9, 220, 24, 0.8); /* Sombra mais forte */
 }
 /* Estilo para o nome do controle de volume */
 .volume-label {

@@ -45,7 +45,19 @@ const songs = [
     { title: "Aerosmith - I Dont Want to Miss a Thing", src: 'musicas/Aerosmith - I Dont Want to Miss a Thing.mp3', cover: 'fotos/plant.jpg' },
     { title: "Extreme - More Than Words", src: 'musicas/Extreme - More Than Words.mp3', cover: 'fotos/no ar.jpeg' },
     { title: "Evanescence - Bring Me To Life", src: 'musicas/Evanescence - Bring Me To Life.mp3', cover: 'fotos/fundo2.gif' },
+    { title: "musica In Your Eyes", src: 'musicas/In Your Eyes.mp3', cover: 'fotos/mini.webp' },
+    { title: "Charles  Eddie - Would I Lie To You", src: 'musicas/Charles  Eddie - Would I Lie To You.mp3', cover: 'fotos/uh.webp' },
+    { title: "melhores Whiteney", src: 'musicas/y2meta.com - whiteney).mp3', cover: 'fotos/giphy.webp' },
+    { title: "How Deep Is Your Love ", src: 'musicas/Bee Gees - How Deep Is Your Love (Official Video).mp3', cover: 'fotos/6c0ea53cbbe84e29455c3f4c2456b0a0.jpg' },
+    { title: "We Are The World", src: 'musicas/We Are The World.mp3', cover: 'fotos/isso.webp' },
+    { title: "Paul Young - Oh Girl", src: 'musicas/Paul Young - Oh Girl (UK Version) [Official Video].mp3', cover: 'fotos/pense.webp' },
+    { title: "Popular", src: 'musicas/The Weeknd, Madonna, Playboi Carti - Popular (Official Music Video).mp3', cover: 'fotos/popular.webp' },
+    { title: "Michael Jackson - Remember The Time", src: 'musicas/Michael Jackson - Remember The Time (Official Video).mp3', cover: 'fotos/olho.webp' },
+    { title: "Prince - Musicology ", src: 'musicas/Prince - Musicology (Official Music Video).mp3', cover: 'fotos/prince.webp' },
+    { title: "Céline Dion - Immortality", src: 'musicas/Céline Dion - Immortality (Official HD Video) ft. Bee Gees.mp3', cover: 'fotos/celine.webp' },
+    { title: "Creepiny", src: 'musicas/Creepin.mp3', cover: 'fotos/ui.webp' },
 
+    
 
 
 
